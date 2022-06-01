@@ -1,0 +1,55 @@
+# My Tutorial
+<!-- 
+Template made by Jeff Ginger for Project WHIMC
+This file uses the format found at
+https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+
+Wrap individual code snippets in an expression to make them into movable blocks
+eg if(0 == 0) turns into all comparison expression blocks (somehow?)
+eg if(variable) enables the "make a variable" section
+
+Other helpful things from Cameron Ross
+@showdialogue makes that slide on the tutorial pop out and add a "Next" button
+```template give the students some starter blocks
+```blocks shows the students a hint
+```ghost provides access to blocks without putting them in the workspace or hint
+``|| agent.text ||`` will make the text the same colour as the block menu (you need to change the first word to the name of the menu)
+-->
+
+<!-- block combinations that will show up by default in their workspace -->
+```template
+agent.teleportToPlayer()
+agent.teleportToPlayer()
+agent.move(FORWARD, 1)
+agent.turn(LEFT_TURN)
+agent.place(FORWARD)
+agent.destroy(FORWARD)
+agent.collectAll()
+player.onTravelled(WALK, function () {
+})
+```
+
+<!-- blocks you want available to players, based on js code -->
+```blocks
+player.say(":)")
+player.onChat("run", function () {})
+agent.teleportToPlayer()
+agent.move(FORWARD, 1)
+agent.turn(LEFT_TURN)
+agent.place(FORWARD)
+agent.destroy(FORWARD)
+agent.collectAll()
+if(agent.inspect(AgentInspection.Block, FORWARD) == 0)
+if(agent.getPosition() == 0)
+if(agent.detect(AgentDetection.Block, FORWARD) == 0)
+agent.drop(FORWARD, 1, 1)
+
+
+## Step 1
+Step 1 instructions
+
+## Step 2
+Step 2 instructions
+
+## Step 3
+You accomplished your project, good job!
